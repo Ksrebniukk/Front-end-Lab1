@@ -28,7 +28,7 @@ body {
   background-color: white;
   padding: 10px;
   border-bottom: 2px solid #FFB6C1;
-  width: 100%; /* Додано для запобігання пропускам */
+  width: 100%;
 }
 
 .logo {
