@@ -162,20 +162,19 @@ body {
     background-color: #FF69B4;
 }
 
-/* Медіа-запити для малих екранів */
 @media screen and (max-width: 768px) {
     .sidebar {
-        display: none; /* Ховаємо бокову панель */
+        display: none;
     }
 
     .product-grid {
-        width: 100%; /* Збільшуємо ширину основного контенту */
-        margin-left: 0; /* Убираємо лівий відступ */
+        width: 100%;
+        margin-left: 0;
     }
 
     .main-content {
-        flex-direction: column; /* Вирівнюємо контент вертикально */
-        padding: 10px; /* Зменшуємо відступи */
+        flex-direction: column;
+        padding: 10px;
     }
 }
 

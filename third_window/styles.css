@@ -205,7 +205,7 @@ body {
   background-color: white;
   border-top: 2px solid #FFB6C1;
   margin-top: 20px;
-  width: 100%; /* Додано для запобігання пропускам */
+  width: 100%;
   flex-shrink: 0;
 }
 

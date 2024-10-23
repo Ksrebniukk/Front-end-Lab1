@@ -114,8 +114,8 @@ main {
 
 .section-image {
     width: 100%;
-    max-width: 400px; /* Set max-width for large screens */
-    height: auto; /* Maintain aspect ratio */
+    max-width: 400px;
+    height: auto;
     margin-bottom: 20px;
     object-fit: cover;
     border-radius: 8px;
@@ -158,13 +158,13 @@ main {
 }
 
 .category-btn {
-    flex: 1 1 45%; /* Allow buttons to grow and shrink */
+    flex: 1 1 45%;
     text-align: center;
     padding: 15px;
     background-color: #FFFFFF;
     border: 2px solid #D81B60;
     border-radius: 8px;
-    margin: 5px; /* Add margin for spacing */
+    margin: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     font-size: 18px;
     font-weight: bold;
@@ -179,9 +179,9 @@ main {
 }
 
 .destination-button {
-    background-color: #FF80AB; /* Light pink background */
-    border: 2px solid #D81B60; /* Dark pink border */
-    color: white; /* White text */
+    background-color: #FF80AB;
+    border: 2px solid #D81B60;
+    color: white;
     padding: 10px;
     width: 100%;
     font-size: 16px;
@@ -192,29 +192,28 @@ main {
 }
 
 .destination-button:hover {
-    background-color: #D81B60; /* Darker pink on hover */
-    transform: scale(1.05); /* Slightly enlarge on hover */
+    background-color: #D81B60;
+    transform: scale(1.05);
 }
 
-/* Media Queries for responsiveness */
 @media (max-width: 768px) {
     .sidebar-left, .sidebar-right {
-        width: 100%; /* Full width on smaller screens */
-        height: auto; /* Remove fixed height */
-        position: static; /* Remove sticky behavior */
+        width: 100%;
+        height: auto;
+        position: static;
     }
 
     .container {
-        flex-direction: column; /* Stack sections on top of each other */
+        flex-direction: column;
     }
 
     .top-categories {
-        flex-direction: column; /* Stack buttons vertically */
+        flex-direction: column;
     }
 
     .category-btn {
-        flex: 1; /* Allow full width */
-        margin: 5px 0; /* Add vertical margin */
+        flex: 1;
+        margin: 5px 0;
     }
 }
 

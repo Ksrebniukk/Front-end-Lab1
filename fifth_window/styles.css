@@ -7,7 +7,7 @@
 html, body {
   height: 100%;
   font-family: Arial, sans-serif;
-  background-color: #FFEBEE; /* Світлий рожевий фон */
+  background-color: #FFEBEE; 
   color: #333;
 }
 
@@ -19,20 +19,20 @@ body {
 
 .header {
   text-align: center;
-  background-color: #FF4081; /* Рожевий фон для заголовка */
+  background-color: #FF4081; 
   padding: 10px;
-  border-bottom: 2px solid #D81B60; /* Темніший рожевий колір */
+  border-bottom: 2px solid #D81B60; 
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 1000;
-  color: white; /* Білий текст для заголовка */
+  color: white;
 }
 
 .content {
   flex: 1;
-  padding-top: 80px; /* Залишити місце для фіксованого заголовка */
+  padding-top: 80px; 
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -45,9 +45,9 @@ body {
 }
 
 .hero-image {
-  width: 100%; /* Змінити ширину для адаптації */
-  max-width: 400px; /* Максимальна ширина */
-  height: auto; /* Автоматична висота */
+  width: 100%; 
+  max-width: 400px; 
+  height: auto; 
   display: block;
   margin: 0 auto 10px auto;
 }
@@ -55,30 +55,30 @@ body {
 .services-section {
   width: 100%;
   max-width: 80%;
-  margin: 20px auto; /* Center the section */
-  display: flex; /* Use flexbox to center items */
-  justify-content: center; /* Center items horizontally */
-  flex-wrap: wrap; /* Allow wrapping to the next line */
+  margin: 20px auto;
+  display: flex; 
+  justify-content: center; 
+  flex-wrap: wrap; 
 }
 
 .service-box {
   background-color: white;
   padding: 20px;
-  border: 2px solid #FF80AB; /* Рожевий колір */
-  width: 30%; /* Зменшити ширину для кращого вигляду */
-  min-width: 250px; /* Мінімальна ширина */
-  text-align: center; /* Center text */
-  margin: 10px; /* Add margin around each box */
-  display: flex; /* Use flexbox for internal alignment */
-  flex-direction: column; /* Stack image above text */
-  align-items: center; /* Center the image and text */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+  border: 2px solid #FF80AB;
+  width: 30%; 
+  min-width: 250px; 
+  text-align: center;
+  margin: 10px; 
+  display: flex; 
+  flex-direction: column;
+  align-items: center; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .service-image {
-  width: 100%; /* Змінити ширину для адаптації */
-  max-width: 200px; /* Максимальна ширина */
-  height: auto; /* Дозволити автоматичну висоту для збереження пропорцій */
+  width: 100%;
+  max-width: 200px;
+  height: auto;
   display: block;
   margin: 0 auto 10px auto;
 }
@@ -91,30 +91,30 @@ body {
 .subscribe-section input[type="email"] {
   padding: 10px;
   width: 200px;
-  border: 1px solid #FF80AB; /* Рожевий колір */
+  border: 1px solid #FF80AB;
   margin-right: 10px;
 }
 
 .subscribe-section button {
   padding: 10px 20px;
-  background-color: #FF80AB; /* Рожевий фон для кнопки */
+  background-color: #FF80AB;
   border: none;
   cursor: pointer;
-  color: white; /* Білий текст на кнопці */
+  color: white;
 }
 
 .footer {
   background-color: white;
   padding: 20px;
-  text-align: center; /* Center the text within the footer */
+  text-align: center;
   margin-top: auto;
   width: 100%;
 }
 
 .footer table {
-  margin: 0 auto; /* Center the table horizontally */
-  width: auto; /* Allow the table to only take as much space as needed */
-  text-align: center; /* Center text in the table cells */
+  margin: 0 auto;
+  width: auto;
+  text-align: center;
 }
 
 .footer td {
@@ -123,28 +123,28 @@ body {
 
 @media (max-width: 768px) {
   .service-box {
-      width: 80%; /* Змінюємо ширину сервісу на малих екранах */
-      margin: 10px auto; /* Вирівнюємо по центру */
+      width: 80%;
+      margin: 10px auto;
   }
 
   .hero-image {
-      width: 100%; /* Адаптувати ширину зображення героя */
-      max-width: none; /* Вимкнути обмеження */
+      width: 100%;
+      max-width: none;
   }
 }
 
 @media (max-width: 480px) {
   .service-box {
-      width: 100%; /* Ширина на малих екранах */
+      width: 100%;
   }
 
   .subscribe-section input[type="email"] {
-      width: calc(100% - 20px); /* Адаптація ширини поля введення */
-      margin-bottom: 10px; /* Додати відступ внизу */
+      width: calc(100% - 20px);
+      margin-bottom: 10px;
   }
 
   .subscribe-section button {
-      width: 100%; /* Зробити кнопку повної ширини */
+      width: 100%;
   }
 }
 
