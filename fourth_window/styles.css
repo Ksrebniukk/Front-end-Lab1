@@ -24,13 +24,13 @@ body {
 }
 
 .content {
-  display: flex;
   width: 100%;
   margin-top: 80px;
 }
 
 .main-column {
-  flex: 0 0 75%;
+  width: 75%;
+  float: left;
 }
 
 .post {
@@ -39,7 +39,6 @@ body {
   background-color: #FFFFFF;
   border: 2px solid #FF80AB; 
   overflow: hidden;
-  width: 100%;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -77,10 +76,10 @@ body {
 
 .sidebar {
   width: 25%;
+  float: right;
   background-color: #FFFFFF;
   padding: 20px;
   border-left: 2px solid #FF80AB;
-  vertical-align: top;
 }
 
 .sidebar-item {
@@ -99,20 +98,18 @@ body {
   color: #666;
 }
 
+.content::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 @media (max-width: 768px) {
-  .content {
-    flex-direction: column;
-  }
-
-  .main-column {
-    width: 100%;
-  }
-
+  .main-column,
   .sidebar {
+    float: none;
     width: 100%;
-    margin-top: 20px;
-    border-left: none;
-    border-top: 2px solid #FF80AB;
+    margin: 0; 
   }
 
   .post-image {
@@ -127,6 +124,7 @@ body {
     float: none; 
   }
 }
+
 
 
 

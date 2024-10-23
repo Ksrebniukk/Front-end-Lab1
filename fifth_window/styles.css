@@ -56,9 +56,10 @@ body {
   width: 100%;
   max-width: 80%;
   margin: 20px auto;
-  display: flex; 
-  justify-content: center; 
-  flex-wrap: wrap; 
+}
+
+.services-section table {
+  margin: 0 auto;
 }
 
 .service-box {
@@ -69,15 +70,14 @@ body {
   min-width: 250px; 
   text-align: center;
   margin: 10px; 
-  display: flex; 
-  flex-direction: column;
-  align-items: center; 
+  display: inline-block; 
+  vertical-align: top; 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .service-image {
   width: 100%;
-  max-width: 200px;
+  max-width: 150px; 
   height: auto;
   display: block;
   margin: 0 auto 10px auto;
@@ -123,19 +123,13 @@ body {
 
 @media (max-width: 768px) {
   .service-box {
-      width: 80%;
+      width: 80%; 
       margin: 10px auto;
   }
 
   .hero-image {
       width: 100%;
       max-width: none;
-  }
-}
-
-@media (max-width: 480px) {
-  .service-box {
-      width: 100%;
   }
 
   .subscribe-section input[type="email"] {
@@ -148,3 +142,34 @@ body {
   }
 }
 
+@media (max-width: 480px) {
+  .service-box {
+      width: 100%; 
+      margin: 10px 0;
+  }
+
+  .header {
+      font-size: 1.2em; 
+      padding: 15px;
+  }
+
+  .hero-section h2 {
+      font-size: 1.5em; 
+  }
+
+  .hero-section p {
+      font-size: 0.9em; 
+  }
+
+  .subscribe-section input[type="email"] {
+      width: calc(100% - 20px);
+  }
+
+  .subscribe-section button {
+      width: 100%;
+  }
+
+  .footer td {
+      font-size: 0.8em;
+  }
+}
