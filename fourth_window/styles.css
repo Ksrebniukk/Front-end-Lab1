@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #FFEBEE; /* Світлий фон */
+  color: #333;
+}
+
+.header {
+  text-align: center;
+  background-color: #FF4081; /* Рожевий фон для заголовка */
+  padding: 20px;
+  border-bottom: 2px solid #D81B60; /* Темніший рожевий колір */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  color: white; /* Білий текст для заголовка */
+}
+
+.content {
+  display: flex; /* Використовуємо flex для вирівнювання контенту */
+  width: 100%;
+  margin-top: 80px; /* Залишаємо місце для фіксованого заголовка */
+}
+
+.main-column {
+  flex: 0 0 75%; /* 75% ширини для основного контенту */
+}
+
+.post {
+  margin: 20px 0; /* Вертикальні відступи між постами */
+  padding: 20px;
+  background-color: #FFFFFF; /* Білий фон для постів */
+  border: 2px solid #FF80AB; /* Рожевий колір */
+  overflow: hidden;
+  width: 100%; /* Заповнити всю доступну ширину */
+  border-radius: 10px; /* Закруглені кути */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тінь для глибини */
+}
+
+.post-image {
+  width: 30%;
+  float: left;
+  margin-right: 20px;
+  height: 150px; /* Висота зображення для всіх картинок */
+  overflow: hidden; /* Сховати переповнене вміст */
+  border-radius: 5px; /* Закруглені кути для зображення */
+}
+
+.post-image img {
+  width: 100%;
+  height: 100%; /* Висота картинки буде 100% від висоти контейнера */
+  object-fit: cover; /* Заповнення контейнера */
+}
+
+.post-content {
+  width: 65%;
+  float: left;
+}
+
+.post h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #D81B60; /* Темніший рожевий для заголовків постів */
+}
+
+.post p {
+  font-size: 14px;
+  color: #666; /* Сірий колір для тексту */
+}
+
+.sidebar {
+  width: 25%;
+  background-color: #FFFFFF; /* Білий фон для бічної панелі */
+  padding: 20px;
+  border-left: 2px solid #FF80AB; /* Рожевий колір */
+  vertical-align: top;
+}
+
+.sidebar-item {
+  margin-bottom: 30px;
+}
+
+.sidebar h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #FF4081; /* Рожевий колір для заголовків бокової панелі */
+}
+
+.sidebar p {
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #666; /* Сірий колір для тексту */
+}
+
+/* Медіа-запити для адаптації до малих екранів */
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column; /* Зміна напряму на стовпчик */
+  }
+
+  .main-column {
+    width: 100%; /* Займати 100% ширини на малих екранах */
+  }
+
+  .sidebar {
+    width: 100%; /* Бічна панель займає 100% ширини */
+    margin-top: 20px; /* Відступ зверху для бічної панелі */
+    border-left: none; /* Скасування лівого бордюру */
+    border-top: 2px solid #FF80AB; /* Додати верхній бордюр для бічної панелі */
+  }
+
+  .post-image {
+    width: 100%; /* Зображення займає 100% ширини */
+    float: none; /* Скасуємо плаваючі стилі */
+    margin-right: 0; /* Скасуємо відступ */
+    height: auto; /* Автоматична висота */
+  }
+
+  .post-content {
+    width: 100%; /* Контент поста займає 100% ширини */
+    float: none; /* Скасуємо плаваючі стилі */
+  }
+}
+
+
+
+  
+  
+  
